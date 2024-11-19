@@ -4,7 +4,7 @@
     "slug": "Aslam",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logoAslam.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -16,15 +16,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logoAslam.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gabriel_fs.Aslam"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logoAslam.png"
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f1a86080-76cd-4964-ab8d-8e78942db751"
+      }
+    }
   }
 }

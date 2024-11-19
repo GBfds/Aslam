@@ -52,7 +52,7 @@ export default function HomeScreen(){
                                     variant: "small"
                                 }}
                                 buttonProps={{
-                                    style: [Style.buttonLogout, {backgroundColor: theme.colors.blue_100}],
+                                    style: [Style.buttonLogout, {backgroundColor: theme.colors.blue_200}],
                                     onPress: ()=> setShowModalLogout(!showModalLogout)
                                 }}
                                 text={<Text>Voltar</Text>}/>
@@ -63,7 +63,7 @@ export default function HomeScreen(){
 
                 <Box width={"100%"} minHeight={40}
                 justifyContent="center" alignItems="center">
-                    <Text variant="title">Aslam</Text>
+                    <Text variant="large">Aslam</Text>
                 </Box>
                 <Button
                 buttonVariant={{

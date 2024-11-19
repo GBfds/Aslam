@@ -4,14 +4,48 @@ import theme, { ThemeProps } from "../../theme";
 import SafeView from "../../components/Views/SafeView";
 import { FlatList, SafeAreaView, StyleSheet } from "react-native";
 import DbTemp from "../../static/DbTemp";
+import Button from "../../components/Buttons/Button";
+import AntDesign from '@expo/vector-icons/AntDesign';
+import Feather from '@expo/vector-icons/Feather';
+import { useNavigation } from "@react-navigation/native";
+import { StackType } from "../../routes/Stack.routes";
 
 const Box = createBox<ThemeProps>()
 const Text = createText<ThemeProps>()
 
 export default function Cash(){
+
+    const navigation = useNavigation<StackType>()
     return(
-        <SafeView>
+        <SafeView canGoBack={true}>
             <Box flex={1} alignItems="center">
+                <Text variant="title">Periodo Selecionado:</Text>
+
+                <Box width={"96%"} minHeight={56} p="m"
+                elevation={5} borderRadius={6} marginVertical="s"
+                bg="gray"
+                flexDirection="row" justifyContent="space-between" alignItems="center">
+                    <Button
+                    buttonVariant={{
+                        variant: "small"
+                    }}
+                    buttonProps={{
+                        style: Style.ButtonDateSelect
+                    }}
+                    text={<Text color="white" variant="medium">09/11/2024</Text>}/>
+
+
+                    <Button
+                    buttonVariant={{
+                        variant: "small"
+                    }}
+                    buttonProps={{
+                        style: Style.ButtonDateSelect
+                    }}
+                    text={<Text color="white" variant="medium">09/11/2024</Text>}/>
+                </Box>
+
+
                 <SafeAreaView 
                     style={Style.SafeContainer}>
                     <FlatList
@@ -68,5 +102,9 @@ export default function Cash(){
 const Style = StyleSheet.create({
     SafeContainer: {
         width: "100%",
+    },
+    ButtonDateSelect: {
+        backgroundColor: theme.colors.blue_200,
+        borderRadius: 8
     }
 })

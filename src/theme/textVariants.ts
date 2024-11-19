@@ -7,18 +7,18 @@ export const textVariants = {
     small:{
         fontFamily: "Roboto_300Light",
     },
-    title:{
+    large:{
         fontSize: 36,
         color: "blue_800",
         fontFamily: "JosefinSans_700Bold"
+    },
+    title:{
+        fontSize: 18,
+        fontFamily: "Roboto_500Medium"
+
     },
     medium:{
         fontSize: 16,
         fontFamily: "Roboto_500Medium"
     },
-    mediumLigth:{
-        color: "white",
-        fontSize: 16,
-        fontWeight: "700"
-    }
 }
