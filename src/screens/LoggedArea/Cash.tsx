@@ -5,8 +5,6 @@ import SafeView from "../../components/Views/SafeView";
 import { FlatList, SafeAreaView, StyleSheet } from "react-native";
 import DbTemp from "../../static/DbTemp";
 import Button from "../../components/Buttons/Button";
-import AntDesign from '@expo/vector-icons/AntDesign';
-import Feather from '@expo/vector-icons/Feather';
 import { useNavigation } from "@react-navigation/native";
 import { StackType } from "../../routes/Stack.routes";
 
